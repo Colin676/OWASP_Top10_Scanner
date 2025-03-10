@@ -1,10 +1,16 @@
 FROM kalilinux/kali-rolling
+#base kali image
 
 RUN apt-get update
+#update installer
 
-RUN apt-get install python3 -y
-RUN apt-get install python3-pip -y
-RUN pip install requests --break-system-packages
+#From here install the meta package and then commit to create new image
 
-RUN apt-get install nmap -y
+
+
+
+
+
+
+
 
